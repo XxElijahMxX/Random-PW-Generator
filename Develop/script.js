@@ -13,6 +13,9 @@ function generatePassword() {
   var passLength = prompt("How many characters should this password be? Pick a number between 8 and 128.");
 
   if ((passLength >= 8) && (passLength <= 128)) {
+
+    // 3. Generate password based on criteria
+    
    
     var chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+?><:{}[]";
     var password = ""
@@ -28,11 +31,12 @@ function generatePassword() {
       }
        return password += chars.substring(randomNumber, randomNumber)+1;
   }
+ // 4. Display generated password on the page
+  
 
  
 // 3. Generate password based on criteria
   
-  // 4. Display generated password on the page
 
 }
 
